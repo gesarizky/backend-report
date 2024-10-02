@@ -176,7 +176,7 @@ backend-qc-report/
 │   ├── reportRoutes.js         # Routes for report generation
 │   ├── uploadRoutes.js         # Routes for image upload
 ├── templates/
-│   └── sample_qc_report.xlsx   # Excel template file
+│   └── sample_report.xlsx   # Excel template file
 ├── uploads/                    # Directory where uploaded files are stored
 ├── server.js                   # Main server file
 ├── package.json                # Project dependencies and scripts
