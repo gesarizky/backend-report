@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "6ad90628-11ec-4fdf-8f3c-39f33868c021",
+		"name": "Report",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26190900"
+	},
+	"item": [
+		{
+			"name": "Input",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Data\": {\r\n    \"product\": \"Product 1\",\r\n    \"sn\": \"sample_product\",\r\n    \"date\": \"2 September 2024\",\r\n    \"customer\": \"\",\r\n    \"value1\": \"50\",\r\n    \"value2\": \"51\",\r\n    \"tester\": \"Gesa\",\r\n    \"checker\":\"rizky\"\r\n  },\r\n  \"format\": \"xlsx\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/report/generate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"report",
+						"generate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sn",
+							"value": "sample_product",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/H P/Pictures/image-1727856330388-778709369.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/upload/image",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"upload",
+						"image"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

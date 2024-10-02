@@ -1,4 +1,4 @@
-# Backend QC Report Generator with Image Upload
+# Backend Report Generator with Image Upload
 
 ## Table of Contents
 
@@ -21,7 +21,6 @@ This is a backend service built with Node.js that can generate a QC report based
 - Generate QC report in Excel format.
 - Upload images with a custom filename.
 - Insert uploaded image into a specific cell in the Excel report.
-- Extract specific data (e.g., serial number) from the uploaded image using Optical Character Recognition (OCR).
 
 ## Technologies Used
 
@@ -29,7 +28,6 @@ This is a backend service built with Node.js that can generate a QC report based
 - Express.js
 - Multer (for file uploads)
 - ExcelJS (for generating Excel reports)
-- Tesseract.js (for image text extraction)
 - PDFKit (for generating PDF reports)
 
 ## Installation
@@ -92,7 +90,7 @@ This is a backend service built with Node.js that can generate a QC report based
   }
   ```
 
-#### 2. Generate QC Report
+#### 2. Generate Report
 
 **URL**: `/api/report/generate`
 
