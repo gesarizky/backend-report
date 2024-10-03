@@ -49,7 +49,6 @@ export const generateReport = async (req, res) => {
     // Tambahkan pengisian data lainnya sesuai kebutuhan
 
     // Masukkan gambar dari pathimage ke dalam Excel di cell A28
-    // const imagePath = `${Data.pathimage}/${Data.sn}.png`;
     const imagePath = path.join(
       __dirname,
       `../remark/${Data.sn}.png`

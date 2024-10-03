@@ -13,7 +13,7 @@ const storage = multer.diskStorage({
   },
   filename: (req, file, cb) => {
     const originalName = req.body.sn || file.fieldname; // Ambil nama dari body atau gunakan fieldname
-    const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9);
+    // const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9); //apabila ingin simpan dengan tambahan uniqueSuffix
     // cb(
     //   null,
     //   originalName + "-" + uniqueSuffix + path.extname(file.originalname)
